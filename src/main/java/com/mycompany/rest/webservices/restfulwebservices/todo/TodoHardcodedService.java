@@ -12,6 +12,7 @@ public class TodoHardcodedService {
     private static List<Todo> todos = new ArrayList();
     private static int id = 0;
 
+
     static {
         todos.add(new Todo(++id, "anischihi", "Learn Java Spring boot 2", new Date(), false));
         todos.add(new Todo(++id, "anischihi", "Learn to Dance", new Date(), false));
@@ -28,7 +29,7 @@ public class TodoHardcodedService {
 
 
 
-    private static Todo findById(long id) {
+    public Todo findById(long id) {
         return todos.stream().filter(todo -> todo.getId() == id ).findAny().orElse(null);
     }
 }
