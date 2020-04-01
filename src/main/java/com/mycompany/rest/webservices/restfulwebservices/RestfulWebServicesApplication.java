@@ -9,9 +9,6 @@ public class RestfulWebServicesApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ac = SpringApplication.run(RestfulWebServicesApplication.class, args);
-		for (String beanString: ac.getBeanDefinitionNames() ){
-			System.out.println(beanString);
-		}
 	}
 
 }
