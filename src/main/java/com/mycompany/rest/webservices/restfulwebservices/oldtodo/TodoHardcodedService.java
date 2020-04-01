@@ -1,4 +1,4 @@
-package com.mycompany.rest.webservices.restfulwebservices.todo;
+package com.mycompany.rest.webservices.restfulwebservices.oldtodo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.mycompany.rest.webservices.restfulwebservices.todo.Todo;
 
 @Service
 public class TodoHardcodedService {
